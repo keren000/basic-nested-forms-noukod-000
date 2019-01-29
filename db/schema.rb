@@ -14,21 +14,20 @@
 ActiveRecord::Schema.define(version: 20160114112845) do
 
   create_table "addresses", force: :cascade do |t|
-    t.string   "street_address_1"
-    t.string   "street_address_2"
-    t.string   "city"
-    t.string   "state"
-    t.string   "zipcode"
-    t.string   "address_type"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-    t.integer  "person_id"
-  end
+      t.string   "street_address_1"
+      t.string   "street_address_2"
+      t.string   "city"
+      t.string   "state"
+      t.string   "zipcode"
+      t.string   "address_type"
+      t.datetime "created_at",       null: false
+      t.datetime "updated_at",       null: false
+      t.integer  "person_id"
+    end
 
-  create_table "people", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
+    create_table "people", force: :cascade do |t|
+      t.string   "name"
+      t.datetime "created_at", null: false
+      t.datetime "updated_at", null: false
+    end
 end
